@@ -1,0 +1,81 @@
+[gd_scene load_steps=4 format=3 uid="uid://dd76grrhumccf"]
+
+[ext_resource type="Script" uid="uid://c7iq5ek2ivhku" path="res://scenes/menus/options/sections/interface.gd" id="1_fujo8"]
+[ext_resource type="Script" uid="uid://b6ydf4mbyjiwc" path="res://scenes/interface/alphabet.gd" id="2_rqn5q"]
+[ext_resource type="Script" uid="uid://bfvypstga7ch8" path="res://scenes/menus/options/volume_slider.gd" id="6_efc3u"]
+
+[node name="sound" type="Node2D" node_paths=PackedStringArray("options")]
+script = ExtResource("1_fujo8")
+options = [NodePath("master_volume"), NodePath("music_volume"), NodePath("sfx_volume")]
+max_distance = 0.0
+
+[node name="master_volume" type="Node2D" parent="." node_paths=PackedStringArray("root")]
+position = Vector2(-264, -60)
+script = ExtResource("6_efc3u")
+section = &"sound"
+key = &"buses"
+ranged = true
+minimum = 0.0
+maximum = 100.0
+value_suffix = &"%"
+root = NodePath("..")
+PREVIEW = ""
+
+[node name="label" type="Node2D" parent="master_volume"]
+position = Vector2(-140, 0)
+script = ExtResource("2_rqn5q")
+text = "master:"
+centered = true
+
+[node name="value" type="Node2D" parent="master_volume"]
+position = Vector2(38, -32)
+script = ExtResource("2_rqn5q")
+text = "< 0% >"
+
+[node name="music_volume" type="Node2D" parent="." node_paths=PackedStringArray("root")]
+position = Vector2(-287, 36)
+script = ExtResource("6_efc3u")
+bus = &"Music"
+section = &"sound"
+key = &"buses"
+ranged = true
+minimum = 0.0
+maximum = 100.0
+value_suffix = &"%"
+root = NodePath("..")
+PREVIEW = ""
+
+[node name="label" type="Node2D" parent="music_volume"]
+position = Vector2(-140, 0)
+script = ExtResource("2_rqn5q")
+text = "music:"
+centered = true
+
+[node name="value" type="Node2D" parent="music_volume"]
+position = Vector2(60, -33)
+script = ExtResource("2_rqn5q")
+text = "< 0% >"
+
+[node name="sfx_volume" type="Node2D" parent="." node_paths=PackedStringArray("root")]
+position = Vector2(-336, 134)
+script = ExtResource("6_efc3u")
+bus = &"SFX"
+section = &"sound"
+key = &"buses"
+ranged = true
+minimum = 0.0
+maximum = 100.0
+value_suffix = &"%"
+root = NodePath("..")
+PREVIEW = ""
+
+[node name="label" type="Node2D" parent="sfx_volume"]
+position = Vector2(-140, 0)
+script = ExtResource("2_rqn5q")
+text = "sfx:"
+centered = true
+
+[node name="value" type="Node2D" parent="sfx_volume"]
+position = Vector2(109, -33)
+script = ExtResource("2_rqn5q")
+text = "< 0% >"
