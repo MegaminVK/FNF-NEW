@@ -1,8 +1,8 @@
 [gd_scene load_steps=13 format=3 uid="uid://b7fwxsepnt38j"]
 
 [ext_resource type="Script" uid="uid://blahra5leclk" path="res://scenes/menus/main_menu.gd" id="1_mwtkx"]
-[ext_resource type="Texture2D" uid="uid://ltkynwwp1o8s" path="res://assets/menus/main_menu/background.png" id="1_wymee"]
-[ext_resource type="Texture2D" uid="uid://bcq8cfghjibg1" path="res://assets/menus/main_menu/background_pink.png" id="2_dbg3w"]
+[ext_resource type="Texture2D" uid="uid://bothvca57ybxd" path="res://assets/guilty-gear-mod/GGBackground1.jpg" id="2_1hnlc"]
+[ext_resource type="Texture2D" uid="uid://bmm73q7rg8t4v" path="res://assets/guilty-gear-mod/GGBackground2.jpg" id="3_1hnlc"]
 [ext_resource type="Script" uid="uid://xx5djqhvae85" path="res://scripts/menus/scene_main_menu_button.gd" id="4_4uv5u"]
 [ext_resource type="FontFile" uid="uid://dipxuxqymub2c" path="res://assets/fonts/vcr-jp.ttf" id="4_7kxsk"]
 [ext_resource type="SpriteFrames" uid="uid://f3lhnid62rym" path="res://assets/menus/main_menu/buttons.res" id="4_c5hes"]
@@ -94,11 +94,11 @@ scroll_scale = Vector2(0, 0.1)
 scroll_offset = Vector2(640, 360)
 
 [node name="sprite" type="Sprite2D" parent="background"]
-texture = ExtResource("1_wymee")
+texture = ExtResource("2_1hnlc")
 
 [node name="sprite_pink" type="Sprite2D" parent="background"]
 visible = false
-texture = ExtResource("2_dbg3w")
+texture = ExtResource("3_1hnlc")
 
 [node name="animation_player" type="AnimationPlayer" parent="background"]
 libraries = {
@@ -150,10 +150,10 @@ scene_path = "res://scenes/menus/story_mode_menu.tscn"
 animation_name = &"storymode"
 
 [node name="sprite" type="AnimatedSprite2D" parent="ui_layer/scroll_container/container/story_mode"]
-position = Vector2(0, 61)
+position = Vector2(-236, 9)
 sprite_frames = ExtResource("4_c5hes")
 animation = &"storymode idle"
-frame_progress = 0.48985183
+frame_progress = 0.17931959
 script = ExtResource("4_emyfo")
 playing = true
 
@@ -165,10 +165,10 @@ script = ExtResource("7_1hnlc")
 animation_name = &"freeplay"
 
 [node name="sprite" type="AnimatedSprite2D" parent="ui_layer/scroll_container/container/freeplay"]
-position = Vector2(0, 61)
+position = Vector2(-251, 43)
 sprite_frames = ExtResource("4_c5hes")
 animation = &"freeplay idle"
-frame_progress = 0.8404492
+frame_progress = 0.52993196
 script = ExtResource("4_emyfo")
 playing = true
 
@@ -181,10 +181,10 @@ scene_path = "uid://b6gvgi7qjy176"
 animation_name = &"credits"
 
 [node name="sprite" type="AnimatedSprite2D" parent="ui_layer/scroll_container/container/credits"]
-position = Vector2(0, 62)
+position = Vector2(-264, 79)
 sprite_frames = ExtResource("4_c5hes")
 animation = &"credits idle"
-frame_progress = 0.019190092
+frame_progress = 0.7086557
 script = ExtResource("4_emyfo")
 playing = true
 
@@ -197,9 +197,9 @@ scene_path = "res://scenes/menus/options_menu.tscn"
 animation_name = &"options"
 
 [node name="sprite" type="AnimatedSprite2D" parent="ui_layer/scroll_container/container/options"]
-position = Vector2(0, 55)
+position = Vector2(-258, 106)
 sprite_frames = ExtResource("4_c5hes")
 animation = &"options idle"
-frame_progress = 0.56726944
+frame_progress = 0.2567422
 script = ExtResource("4_emyfo")
 playing = true
