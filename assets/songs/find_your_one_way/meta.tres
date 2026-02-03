@@ -7,7 +7,7 @@
 [sub_resource type="Resource" id="Resource_5ho70"]
 script = ExtResource("1_33gq3")
 texture = ExtResource("2_3ysfj")
-color = Color(0.48235294, 0.8392157, 0.9647059, 1)
+color = Color(1, 0, 0, 1)
 frames = Vector2i(1, 1)
 filter = 1
 internal_scale = Vector2(1.5, 1.5)
