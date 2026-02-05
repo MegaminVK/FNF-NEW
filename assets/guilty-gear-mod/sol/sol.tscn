@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dmoepm00llloi" path="res://scenes/game/characters/character.gd" id="1_muqn4"]
 [ext_resource type="Script" uid="uid://b7lu04jsahckp" path="res://scripts/resources/icon.gd" id="2_wfwaa"]
 [ext_resource type="Texture2D" uid="uid://om3gq0kusimg" path="res://assets/guilty-gear-mod/sol/solIcon.png" id="3_d0cn3"]
-[ext_resource type="SpriteFrames" uid="uid://d3qex7nrwkhtj" path="res://assets/guilty-gear-mod/sol/spritesSol.res" id="4_d0cn3"]
+[ext_resource type="SpriteFrames" uid="uid://do03lfe1xw0sh" path="res://assets/guilty-gear-mod/sol/Solsprites.res" id="4_d0cn3"]
 [ext_resource type="Script" uid="uid://xcwf8fppek0h" path="res://scripts/animated_sprite.gd" id="5_fx2nt"]
 
 [sub_resource type="Resource" id="Resource_aw77d"]
