@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="SongAssets" load_steps=5 format=3 uid="uid://cht6iq8f10ycv"]
+[gd_resource type="Resource" script_class="SongAssets" load_steps=6 format=3 uid="uid://cht6iq8f10ycv"]
 
 [ext_resource type="PackedScene" uid="uid://bjdeletn3v1xr" path="res://assets/guilty-gear-mod/sol/sol.tscn" id="1_af3qp"]
 [ext_resource type="Resource" uid="uid://pv1ounxci6y8" path="res://assets/game/skins/pixel/note_skin.tres" id="2_qw5sw"]
 [ext_resource type="Script" uid="uid://dk2lxfhv5lvf4" path="res://scripts/resources/song_assets.gd" id="3_x8t8d"]
-[ext_resource type="PackedScene" uid="uid://l1dqw6ovt7lg" path="res://scenes/game/characters/null.tscn" id="4_lvgbr"]
+[ext_resource type="PackedScene" uid="uid://bragoy3tisav2" path="res://scenes/game/characters/gf.tscn" id="4_5w2p1"]
+[ext_resource type="PackedScene" uid="uid://cr1y6ckgvprb6" path="res://scenes/game/stages/philly_train.tscn" id="5_i4qdw"]
 
 [resource]
 script = ExtResource("3_x8t8d")
-spectator = ExtResource("4_lvgbr")
-opponent = ExtResource("1_af3qp")
+spectator = ExtResource("4_5w2p1")
+opponent = ExtResource("1_i4qdw")
+stage = ExtResource("5_i4qdw")
 opponent_note_skin = ExtResource("2_qw5sw")
