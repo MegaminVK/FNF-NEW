@@ -1,14 +1,12 @@
-[gd_resource type="Resource" script_class="SongAssets" load_steps=6 format=3 uid="uid://fwde86q5pyik"]
+[gd_resource type="Resource" script_class="SongAssets" load_steps=5 format=3 uid="uid://fwde86q5pyik"]
 
 [ext_resource type="PackedScene" uid="uid://cktmphi6urfkm" path="res://assets/guilty-gear-mod/slayer/slayer.tscn" id="1_w0t0w"]
 [ext_resource type="Resource" uid="uid://pv1ounxci6y8" path="res://assets/game/skins/pixel/note_skin.tres" id="2_qw5sw"]
 [ext_resource type="Script" uid="uid://dk2lxfhv5lvf4" path="res://scripts/resources/song_assets.gd" id="3_x8t8d"]
-[ext_resource type="PackedScene" uid="uid://bragoy3tisav2" path="res://scenes/game/characters/gf.tscn" id="4_a2icm"]
-[ext_resource type="PackedScene" uid="uid://be43de6mqy3ia" path="res://scenes/game/stages/spooky.tscn" id="5_a2icm"]
+[ext_resource type="PackedScene" uid="uid://l1dqw6ovt7lg" path="res://scenes/game/characters/null.tscn" id="4_lvgbr"]
 
 [resource]
 script = ExtResource("3_x8t8d")
-spectator = ExtResource("4_a2icm")
+spectator = ExtResource("4_lvgbr")
 opponent = ExtResource("1_w0t0w")
-stage = ExtResource("5_a2icm")
 opponent_note_skin = ExtResource("2_qw5sw")
