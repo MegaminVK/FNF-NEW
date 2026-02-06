@@ -415,8 +415,8 @@ script = ExtResource("1_0ef7e")
 icon = SubResource("Resource_aw77d")
 
 [node name="sprite" type="AnimatedSprite2D" parent="."]
-position = Vector2(-682, -715)
-scale = Vector2(2.5, 2.5)
+position = Vector2(-425, -627.00006)
+scale = Vector2(2, 2.068)
 sprite_frames = ExtResource("4_jqd6f")
 animation = &"monster idle"
 centered = false
